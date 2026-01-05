@@ -50,31 +50,44 @@ export const WebDark = (): JSX.Element => {
 
           <button 
             onClick={toggleTheme}
-            className="relative w-[87.5px] h-10 bg-[#151535] rounded-[37.5px] overflow-hidden cursor-pointer group"
+            className={`relative w-[87.5px] h-10 rounded-[37.5px] overflow-hidden cursor-pointer group transition-colors duration-500 ${
+              theme === "dark" ? "bg-[#151535]" : "bg-[#4db2ff]"
+            }`}
           >
-            {/* Background elements */}
-            <div className="absolute top-[-13px] left-[11px] w-[65px] h-[65px] bg-[#1a1a44] rounded-[32.5px] blur-[7.5px]" />
-            <div className="absolute top-[-11px] left-[26px] w-[61px] h-[61px] bg-[#222257] rounded-[30.63px] blur-[7.5px]" />
-            <div className="absolute top-[-11px] left-[41px] w-[61px] h-[61px] bg-[#2a2a72] rounded-[30.63px] blur-[7.5px]" />
+            {/* Dark Mode Background Elements */}
+            <div className={`absolute inset-0 transition-opacity duration-500 ${theme === "dark" ? "opacity-100" : "opacity-0"}`}>
+              <div className="absolute top-[-13px] left-[11px] w-[65px] h-[65px] bg-[#1a1a44] rounded-[32.5px] blur-[7.5px]" />
+              <div className="absolute top-[-11px] left-[26px] w-[61px] h-[61px] bg-[#222257] rounded-[30.63px] blur-[7.5px]" />
+              <div className="absolute top-[-11px] left-[41px] w-[61px] h-[61px] bg-[#2a2a72] rounded-[30.63px] blur-[7.5px]" />
+            </div>
+
+            {/* Light Mode Background Elements (Sun/Morning) */}
+            <div className={`absolute inset-0 transition-opacity duration-500 ${theme === "light" ? "opacity-100" : "opacity-0"}`}>
+              <div className="absolute top-[-10px] left-[-10px] w-[60px] h-[60px] bg-[#80c8ff] rounded-full blur-[10px]" />
+              <div className="absolute top-[5px] left-[15px] w-[40px] h-[40px] bg-[#b3e0ff] rounded-full blur-[8px]" />
+              <div className="absolute top-[10px] right-[-5px] w-[30px] h-[30px] bg-[#ffffff] opacity-40 rounded-full blur-[5px]" />
+            </div>
             
             {/* Knob/Circle */}
             <div 
-              className={`absolute top-1 w-[33px] h-[33px] rounded-full shadow-[-0.63px_0.63px_1.88px_#323297,0.63px_-0.63px_1.25px_#232357] backdrop-blur-[3.75px] bg-[linear-gradient(138deg,rgba(233,240,255,1)_0%,rgba(224,233,254,1)_100%)] transition-all duration-300 flex items-center justify-center ${
-                theme === "dark" ? "left-[51px]" : "left-1"
+              className={`absolute top-1 w-[33px] h-[33px] rounded-full shadow-lg transition-all duration-500 flex items-center justify-center z-10 ${
+                theme === "dark" 
+                  ? "left-[51px] bg-[linear-gradient(138deg,rgba(233,240,255,1)_0%,rgba(224,233,254,1)_100%)] shadow-[-0.63px_0.63px_1.88px_#323297,0.63px_-0.63px_1.25px_#232357]" 
+                  : "left-1 bg-[linear-gradient(138deg,#ffdf5e_0%,#f06f16_100%)] shadow-[0_2px_10px_rgba(240,111,22,0.5)]"
               }`}
             >
               {theme === "dark" ? (
                 <Moon className="w-4 h-4 text-[#323297]" />
               ) : (
-                <Sun className="w-4 h-4 text-[#f06f16]" />
+                <Sun className="w-4 h-4 text-white" />
               )}
             </div>
 
-            {/* Cloud/Decorative elements - only visible in light mode or moved */}
-            <div className={`absolute top-1.5 w-[38px] h-[30px] transition-all duration-300 ${theme === "light" ? "left-[45px] opacity-100" : "left-2 opacity-40"}`}>
+            {/* Cloud/Decorative elements */}
+            <div className={`absolute top-1.5 w-[38px] h-[30px] transition-all duration-500 ${theme === "light" ? "left-[45px] opacity-100 scale-110" : "left-2 opacity-40 scale-75 blur-[1px]"}`}>
               <img
                 className="w-full h-full"
-                alt="Group"
+                alt="Cloud"
                 src="/figmaAssets/group-2.png"
               />
             </div>
