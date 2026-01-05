@@ -36,7 +36,7 @@ const skillCategories = [
 
 export const SkillsOverviewSection = (): JSX.Element => {
   return (
-    <section id="skills" className="flex flex-col w-full items-start gap-9 relative">
+    <section id="skills" className="flex flex-col w-full items-start gap-9 relative scroll-mt-24 px-4 sm:px-6 overflow-hidden">
       <header className="flex flex-col max-w-[924px] items-start gap-3 relative">
         <div className="flex flex-col items-start gap-1.5 relative">
           <p className="relative [font-family:'Roboto_Mono',Helvetica] font-bold text-[#ffffff99] text-base tracking-[0] leading-[normal]">

@@ -18,10 +18,10 @@ export const WebDark = (): JSX.Element => {
   return (
     <div className="bg-[#0f1117] w-full min-h-screen relative">
       <header className="w-full flex justify-center py-8">
-        <div className="w-full max-w-[1332px] px-4 flex items-center justify-between">
+        <div className="w-full max-w-[1332px] px-4 sm:px-6 flex items-center justify-between">
           <img className="w-7 h-[21px]" alt="Ks" src="/figmaAssets/ks.svg" />
 
-          <nav className="flex items-center gap-14">
+          <nav className="hidden md:flex items-center gap-8 lg:gap-14">
             {navItems.map((item, index) => (
               <a
                 key={index}
@@ -78,22 +78,12 @@ export const WebDark = (): JSX.Element => {
         </div>
       </header>
 
-      <main className="w-full relative max-w-[1332px] mx-auto px-6 flex flex-col gap-32 scroll-smooth">
-        <div id="home" className="scroll-mt-32">
-          <IntroductionSection />
-        </div>
-        <div id="about" className="scroll-mt-32">
-          <AboutMeSection />
-        </div>
-        <div id="projects" className="scroll-mt-32">
-          <PortfolioSection />
-        </div>
-        <div id="skills" className="scroll-mt-32">
-          <SkillsOverviewSection />
-        </div>
-        <div id="contact" className="scroll-mt-32">
-          <ContactSection />
-        </div>
+      <main className="w-full relative max-w-[1332px] mx-auto px-0 flex flex-col gap-32 scroll-smooth overflow-x-hidden">
+        <IntroductionSection />
+        <AboutMeSection />
+        <PortfolioSection />
+        <SkillsOverviewSection />
+        <ContactSection />
       </main>
 
       <footer className="w-full h-[67px] flex items-center justify-center bg-[#0d111f]">

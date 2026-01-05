@@ -63,8 +63,8 @@ export const IntroductionSection = (): JSX.Element => {
   ];
 
   return (
-    <section id="home" className="w-full py-16">
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-16 w-full">
+    <section id="home" className="w-full py-16 scroll-mt-24 px-4 sm:px-6">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-16 w-full max-w-[1332px] mx-auto">
         <div className="flex flex-col items-start gap-[53px] w-full lg:w-[469px]">
           <div className="flex flex-col items-start gap-2.5 w-full">
             <div className="flex flex-col items-start gap-[5px] w-full">
@@ -72,7 +72,7 @@ export const IntroductionSection = (): JSX.Element => {
                 &lt;Hello World&gt;
               </div>
 
-              <h1 className="[font-family:'Poppins',Helvetica] font-bold text-[64px] tracking-[0] leading-[normal]">
+              <h1 className="[font-family:'Poppins',Helvetica] font-bold text-4xl sm:text-5xl lg:text-[64px] tracking-[0] leading-tight">
                 <span className="text-[#ffffffcc]">Kishan </span>
                 <span className="text-[#4c8eff]">Shetty</span>
               </h1>

@@ -34,9 +34,9 @@ const skills = [
 
 export const AboutMeSection = (): JSX.Element => {
   return (
-    <section id="about" className="flex flex-col xl:flex-row items-start gap-[63px] w-full">
-      <div className="flex flex-col flex-1 items-start gap-[46px]">
-        <div className="flex flex-col w-[235px] items-start gap-1.5">
+    <section id="about" className="flex flex-col xl:flex-row items-start gap-[63px] w-full scroll-mt-24 px-4 sm:px-6 overflow-hidden">
+      <div className="flex flex-col flex-1 items-start gap-[46px] w-full">
+        <div className="flex flex-col w-full sm:w-[235px] items-start gap-1.5">
           <div className="self-stretch [font-family:'Roboto_Mono',Helvetica] font-bold text-[#ffffff99] text-base tracking-[0] leading-[normal]">
             &lt;Get to Know More&gt;
           </div>
@@ -68,9 +68,9 @@ export const AboutMeSection = (): JSX.Element => {
             </p>
           </div>
 
-          <div className="inline-flex items-center gap-[25px]">
-            <Card className="w-[440px] h-[261px] bg-[#0d111f] rounded-[10px] border border-solid border-[#4c8eff33]">
-              <CardContent className="flex flex-col w-[358px] items-start gap-[15px] pt-[27px] pl-7">
+          <div className="flex flex-col md:flex-row items-center gap-[25px] w-full">
+            <Card className="w-full md:w-[440px] min-h-[261px] bg-[#0d111f] rounded-[10px] border border-solid border-[#4c8eff33]">
+              <CardContent className="flex flex-col items-start gap-[15px] p-6 sm:p-7">
                 <div className="inline-flex items-center gap-2">
                   <img
                     className="w-6 h-6"
@@ -103,8 +103,8 @@ export const AboutMeSection = (): JSX.Element => {
               </CardContent>
             </Card>
 
-            <Card className="w-[440px] h-[261px] bg-[#0d111f] rounded-[10px] border border-solid border-[#4c8eff33]">
-              <CardContent className="flex flex-col w-[355px] items-start gap-[18px] pt-[27px] pl-6">
+            <Card className="w-full md:w-[440px] min-h-[261px] bg-[#0d111f] rounded-[10px] border border-solid border-[#4c8eff33]">
+              <CardContent className="flex flex-col items-start gap-[18px] p-6 sm:p-7">
                 <div className="inline-flex items-center gap-[9px]">
                   <img
                     className="w-6 h-6"
@@ -162,7 +162,7 @@ export const AboutMeSection = (): JSX.Element => {
               </p>
             </div>
 
-            <div className="flex flex-wrap w-[336px] items-start gap-[7px_8px]">
+            <div className="flex flex-wrap items-start gap-[7px_8px] w-full">
               {skills.map((skill, index) => (
                 <Badge
                   key={index}

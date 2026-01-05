@@ -34,7 +34,7 @@ const projectsData = [
 
 export const PortfolioSection = (): JSX.Element => {
   return (
-    <section id="projects" className="flex flex-col w-full items-start gap-[65px] relative">
+    <section id="projects" className="flex flex-col w-full items-start gap-[65px] relative scroll-mt-24 px-4 sm:px-6 overflow-hidden">
       <header className="flex flex-col max-w-[924px] items-start gap-3 relative">
         <div className="flex flex-col items-start gap-1.5 relative">
           <div className="relative [font-family:'Roboto_Mono',Helvetica] font-bold text-[#ffffff99] text-base tracking-[0] leading-[normal]">
@@ -58,7 +58,7 @@ export const PortfolioSection = (): JSX.Element => {
         {projectsData.map((project) => (
           <Card
             key={project.id}
-            className="bg-[#0d111f] rounded-[10px] overflow-hidden border border-solid border-[#4c8eff66] flex flex-col h-[469px]"
+            className="bg-[#0d111f] rounded-[10px] overflow-hidden border border-solid border-[#4c8eff66] flex flex-col min-h-[469px] w-full"
           >
             <div className="w-full h-[220px] flex-shrink-0">
               <img
