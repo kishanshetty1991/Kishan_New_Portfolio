@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   root: path.resolve(import.meta.dirname, "client"),
   build: {
-    outDir: "dist",
+    outDir:path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
   },
   base: process.env.VITE_BASE_PATH || '/'
