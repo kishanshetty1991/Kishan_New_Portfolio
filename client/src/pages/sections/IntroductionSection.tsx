@@ -68,17 +68,17 @@ export const IntroductionSection = (): JSX.Element => {
         <div className="flex flex-col items-start gap-[53px] w-full lg:w-[469px]">
           <div className="flex flex-col items-start gap-2.5 w-full">
             <div className="flex flex-col items-start gap-[5px] w-full">
-              <div className="[font-family:'Roboto_Mono',Helvetica] font-bold text-[#ffffff99] text-base tracking-[0] leading-[normal]">
+              <div className="[font-family:'Roboto_Mono',Helvetica] font-bold text-black/40 dark:text-[#ffffff99] text-base tracking-[0] leading-[normal]">
                 &lt;Hello World&gt;
               </div>
 
               <h1 className="[font-family:'Poppins',Helvetica] font-bold text-4xl sm:text-5xl lg:text-[64px] tracking-[0] leading-tight">
-                <span className="text-[#ffffffcc]">Kishan </span>
+                <span className="text-black/80 dark:text-[#ffffffcc]">Kishan </span>
                 <span className="text-[#4c8eff]">Shetty</span>
               </h1>
             </div>
 
-            <p className="[font-family:'Poppins',Helvetica] font-normal text-[#ffffff99] text-xl tracking-[0] leading-[normal] max-w-[395px]">
+            <p className="[font-family:'Poppins',Helvetica] font-normal text-black/60 dark:text-[#ffffff99] text-xl tracking-[0] leading-[normal] max-w-[395px]">
               From frontend pixels to backend logic — I build it all.
             </p>
           </div>

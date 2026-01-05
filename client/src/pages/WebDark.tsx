@@ -91,7 +91,7 @@ export const WebDark = (): JSX.Element => {
       </main>
 
       <footer className="w-full h-[67px] flex items-center justify-center bg-[#0d111f]">
-        <div className="mt-px h-6 w-[190px] [font-family:'Poppins',Helvetica] font-normal text-[#ffffffcc] text-base tracking-[1.28px] leading-[normal] text-center">
+        <div className="mt-px h-6 w-[220px] [font-family:'Poppins',Helvetica] font-normal text-[#ffffffcc] text-base tracking-[1.28px] leading-[normal] text-center">
           Made with ❤ in India
         </div>
       </footer>

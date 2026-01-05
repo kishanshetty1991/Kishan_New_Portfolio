@@ -41,16 +41,16 @@ export const ContactSection = (): JSX.Element => {
     <section id="contact" className="flex flex-col w-full items-start gap-[83px] scroll-mt-24 px-4 sm:px-6 overflow-hidden">
       <div className="flex flex-col max-w-[924px] items-start gap-3">
         <div className="flex flex-col items-start gap-1.5">
-          <div className="[font-family:'Roboto_Mono',Helvetica] font-bold text-[#ffffff99] text-base tracking-[0] leading-[normal]">
+          <div className="[font-family:'Roboto_Mono',Helvetica] font-bold text-black/40 dark:text-[#ffffff99] text-base tracking-[0] leading-[normal]">
             &lt;Reach Out&gt;
           </div>
 
-          <h2 className="[font-family:'Poppins',Helvetica] font-bold text-[#ffffffcc] text-[40px] tracking-[0] leading-[normal]">
+          <h2 className="[font-family:'Poppins',Helvetica] font-bold text-black/80 dark:text-[#ffffffcc] text-[40px] tracking-[0] leading-[normal]">
             Say Hello
           </h2>
         </div>
 
-        <p className="[font-family:'Poppins',Helvetica] font-normal text-[#ffffff99] text-lg tracking-[0] leading-[normal]">
+        <p className="[font-family:'Poppins',Helvetica] font-normal text-black/60 dark:text-[#ffffff99] text-lg tracking-[0] leading-[normal]">
           Got an idea, question, or just want to chat tech? I&apos;d love to
           hear from you! Drop a message and I&apos;ll get back as soon as I can.
         </p>
@@ -60,11 +60,11 @@ export const ContactSection = (): JSX.Element => {
         <div className="flex flex-col w-full lg:w-[421px] items-start gap-[35px]">
           <div className="flex flex-col items-start gap-[37px] w-full">
             <div className="flex flex-col max-w-[387px] items-start gap-[17px]">
-              <h3 className="[font-family:'Poppins',Helvetica] font-medium text-[#ffffffcc] text-lg tracking-[0] leading-[normal]">
+              <h3 className="[font-family:'Poppins',Helvetica] font-medium text-black/80 dark:text-[#ffffffcc] text-lg tracking-[0] leading-[normal]">
                 Contact Information
               </h3>
 
-              <p className="[font-family:'Poppins',Helvetica] font-normal text-[#ffffff99] text-base tracking-[0] leading-[normal]">
+              <p className="[font-family:'Poppins',Helvetica] font-normal text-black/60 dark:text-[#ffffff99] text-base tracking-[0] leading-[normal]">
                 Just drop your details in the form — I&apos;ll get back to you
                 shortly!
               </p>
@@ -74,17 +74,17 @@ export const ContactSection = (): JSX.Element => {
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-start w-full gap-2.5">
                   <img
-                    className="w-6 h-6 flex-shrink-0"
+                    className="w-6 h-6 flex-shrink-0 dark:invert-0 invert"
                     alt={info.title}
                     src={info.icon}
                   />
 
                   <div className="flex flex-col flex-1">
-                    <div className="[font-family:'Poppins',Helvetica] font-medium text-[#ffffffcc] text-lg tracking-[0] leading-[normal]">
+                    <div className="[font-family:'Poppins',Helvetica] font-medium text-black/80 dark:text-[#ffffffcc] text-lg tracking-[0] leading-[normal]">
                       {info.title}
                     </div>
 
-                    <div className="[font-family:'Poppins',Helvetica] font-normal text-[#ffffff99] text-base tracking-[0] leading-[normal]">
+                    <div className="[font-family:'Poppins',Helvetica] font-normal text-black/60 dark:text-[#ffffff99] text-base tracking-[0] leading-[normal]">
                       {info.value}
                     </div>
                   </div>
@@ -94,7 +94,7 @@ export const ContactSection = (): JSX.Element => {
           </div>
 
           <div className="flex flex-col items-start gap-3.5">
-            <h3 className="[font-family:'Poppins',Helvetica] font-medium text-[#ffffffcc] text-lg tracking-[0] leading-[normal]">
+            <h3 className="[font-family:'Poppins',Helvetica] font-medium text-black/80 dark:text-[#ffffffcc] text-lg tracking-[0] leading-[normal]">
               Connect with me
             </h3>
 
@@ -102,37 +102,37 @@ export const ContactSection = (): JSX.Element => {
               {socialLinks.map((social, index) => (
                 <button
                   key={index}
-                  className="w-12 h-12 bg-[#ffffff33] rounded-[40px] overflow-hidden flex items-center justify-center hover:bg-[#ffffff4d] transition-colors"
+                  className="w-12 h-12 bg-black/5 dark:bg-[#ffffff33] rounded-[40px] overflow-hidden flex items-center justify-center hover:bg-black/10 dark:hover:bg-[#ffffff4d] transition-colors"
                   aria-label={social.alt}
                 >
-                  <img className="w-6 h-6" alt={social.alt} src={social.icon} />
+                  <img className="w-6 h-6 dark:invert-0 invert" alt={social.alt} src={social.icon} />
                 </button>
               ))}
             </div>
           </div>
         </div>
 
-        <div className="w-full lg:w-[876px] rounded-[10px] overflow-hidden border border-solid border-[#ffffff33]">
+        <div className="w-full lg:w-[876px] rounded-[10px] overflow-hidden border border-solid border-black/10 dark:border-[#ffffff33]">
           <form className="flex flex-col gap-[27px] p-9">
             <div className="flex flex-col lg:flex-row gap-[27px]">
               <div className="flex flex-col gap-2.5 flex-1">
                 <Label
                   htmlFor="name"
-                  className="[font-family:'Poppins',Helvetica] font-medium text-[#ffffffcc] text-base tracking-[0] leading-[normal]"
+                  className="[font-family:'Poppins',Helvetica] font-medium text-black/80 dark:text-[#ffffffcc] text-base tracking-[0] leading-[normal]"
                 >
                   Your Name
                 </Label>
                 <Input
                   id="name"
                   defaultValue="John Doe"
-                  className="h-auto gap-2.5 p-2.5 rounded-[10px] border border-solid border-[#ffffff33] bg-transparent [font-family:'Poppins',Helvetica] font-normal text-[#ffffffcc] text-sm tracking-[0] leading-[normal]"
+                  className="h-auto gap-2.5 p-2.5 rounded-[10px] border border-solid border-black/10 dark:border-[#ffffff33] bg-transparent [font-family:'Poppins',Helvetica] font-normal text-black/80 dark:text-[#ffffffcc] text-sm tracking-[0] leading-[normal]"
                 />
               </div>
 
               <div className="flex flex-col gap-2.5 flex-1">
                 <Label
                   htmlFor="email"
-                  className="[font-family:'Poppins',Helvetica] font-medium text-[#ffffffcc] text-base tracking-[0] leading-[normal]"
+                  className="[font-family:'Poppins',Helvetica] font-medium text-black/80 dark:text-[#ffffffcc] text-base tracking-[0] leading-[normal]"
                 >
                   Your Email
                 </Label>
@@ -140,7 +140,7 @@ export const ContactSection = (): JSX.Element => {
                   id="email"
                   type="email"
                   defaultValue="john@example.com"
-                  className="h-auto gap-2.5 p-2.5 rounded-[10px] border border-solid border-[#ffffff33] bg-transparent [font-family:'Poppins',Helvetica] font-normal text-[#ffffffcc] text-sm tracking-[0] leading-[normal]"
+                  className="h-auto gap-2.5 p-2.5 rounded-[10px] border border-solid border-black/10 dark:border-[#ffffff33] bg-transparent [font-family:'Poppins',Helvetica] font-normal text-black/80 dark:text-[#ffffffcc] text-sm tracking-[0] leading-[normal]"
                 />
               </div>
             </div>
@@ -148,28 +148,28 @@ export const ContactSection = (): JSX.Element => {
             <div className="flex flex-col gap-2.5">
               <Label
                 htmlFor="subject"
-                className="[font-family:'Poppins',Helvetica] font-medium text-[#ffffffcc] text-base tracking-[0] leading-[normal]"
+                className="[font-family:'Poppins',Helvetica] font-medium text-black/80 dark:text-[#ffffffcc] text-base tracking-[0] leading-[normal]"
               >
                 Subject
               </Label>
               <Input
                 id="subject"
                 defaultValue="How can I help you?"
-                className="h-auto gap-2.5 p-2.5 rounded-[10px] border border-solid border-[#ffffff33] bg-transparent [font-family:'Poppins',Helvetica] font-normal text-[#ffffffcc] text-sm tracking-[0] leading-[normal]"
+                className="h-auto gap-2.5 p-2.5 rounded-[10px] border border-solid border-black/10 dark:border-[#ffffff33] bg-transparent [font-family:'Poppins',Helvetica] font-normal text-black/80 dark:text-[#ffffffcc] text-sm tracking-[0] leading-[normal]"
               />
             </div>
 
             <div className="flex flex-col gap-2.5">
               <Label
                 htmlFor="message"
-                className="[font-family:'Poppins',Helvetica] font-medium text-[#ffffffcc] text-base tracking-[0] leading-[normal]"
+                className="[font-family:'Poppins',Helvetica] font-medium text-black/80 dark:text-[#ffffffcc] text-base tracking-[0] leading-[normal]"
               >
                 Message
               </Label>
               <Textarea
                 id="message"
                 defaultValue="Your message here...."
-                className="h-32 gap-2.5 p-2.5 rounded-[10px] border border-solid border-[#ffffff33] bg-transparent [font-family:'Poppins',Helvetica] font-normal text-[#ffffffcc] text-sm tracking-[0] leading-[normal] resize-none"
+                className="h-32 gap-2.5 p-2.5 rounded-[10px] border border-solid border-black/10 dark:border-[#ffffff33] bg-transparent [font-family:'Poppins',Helvetica] font-normal text-black/80 dark:text-[#ffffffcc] text-sm tracking-[0] leading-[normal] resize-none"
               />
             </div>
 

@@ -37,11 +37,11 @@ export const AboutMeSection = (): JSX.Element => {
     <section id="about" className="flex flex-col xl:flex-row items-start gap-[63px] w-full scroll-mt-24 px-4 sm:px-6 overflow-hidden">
       <div className="flex flex-col flex-1 items-start gap-[46px] w-full">
         <div className="flex flex-col w-full sm:w-[235px] items-start gap-1.5">
-          <div className="self-stretch [font-family:'Roboto_Mono',Helvetica] font-bold text-[#ffffff99] text-base tracking-[0] leading-[normal]">
+          <div className="self-stretch [font-family:'Roboto_Mono',Helvetica] font-bold text-black/40 dark:text-[#ffffff99] text-base tracking-[0] leading-[normal]">
             &lt;Get to Know More&gt;
           </div>
 
-          <h2 className="self-stretch [font-family:'Poppins',Helvetica] font-bold text-[#ffffffcc] text-5xl tracking-[0] leading-[normal]">
+          <h2 className="self-stretch [font-family:'Poppins',Helvetica] font-bold text-black/80 dark:text-[#ffffffcc] text-5xl tracking-[0] leading-[normal]">
             About Me
           </h2>
         </div>
@@ -50,17 +50,17 @@ export const AboutMeSection = (): JSX.Element => {
           <div className="flex flex-col items-start gap-1.5 self-stretch w-full">
             <div className="inline-flex items-start gap-2.5">
               <img
-                className="w-6 h-6"
+                className="w-6 h-6 dark:invert-0 invert"
                 alt="Solar document"
                 src="/figmaAssets/solar-document-broken.svg"
               />
 
-              <h3 className="w-[148px] [font-family:'Poppins',Helvetica] font-medium text-[#ffffffcc] text-xl tracking-[0] leading-[normal]">
+              <h3 className="w-[148px] [font-family:'Poppins',Helvetica] font-medium text-black/80 dark:text-[#ffffffcc] text-xl tracking-[0] leading-[normal]">
                 Bio
               </h3>
             </div>
 
-            <p className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-[#ffffff99] text-lg tracking-[0] leading-[normal]">
+            <p className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-black/60 dark:text-[#ffffff99] text-lg tracking-[0] leading-[normal]">
               Full-stack developer passionate about building scalable web
               solutions using modern technologies. From developing smart
               contracts with Solidity to crafting AI-powered applications, I
@@ -69,50 +69,50 @@ export const AboutMeSection = (): JSX.Element => {
           </div>
 
           <div className="flex flex-col md:flex-row items-center gap-[25px] w-full">
-            <Card className="w-full md:w-[440px] min-h-[261px] bg-[#0d111f] rounded-[10px] border border-solid border-[#4c8eff33]">
+            <Card className="w-full md:w-[440px] min-h-[261px] bg-[#f8f9fa] dark:bg-[#0d111f] rounded-[10px] border border-solid border-[#4c8eff33]">
               <CardContent className="flex flex-col items-start gap-[15px] p-6 sm:p-7">
                 <div className="inline-flex items-center gap-2">
                   <img
-                    className="w-6 h-6"
+                    className="w-6 h-6 dark:invert-0 invert"
                     alt="Cil education"
                     src="/figmaAssets/cil-education.svg"
                   />
 
-                  <h3 className="w-[148px] [font-family:'Poppins',Helvetica] font-medium text-[#ffffffcc] text-xl tracking-[0] leading-[normal]">
+                  <h3 className="w-[148px] [font-family:'Poppins',Helvetica] font-medium text-black/80 dark:text-[#ffffffcc] text-xl tracking-[0] leading-[normal]">
                     Education
                   </h3>
                 </div>
 
                 <div className="flex flex-col items-start gap-1.5 self-stretch w-full">
-                  <div className="self-stretch [font-family:'Poppins',Helvetica] font-semibold text-[#ffffffcc] text-lg tracking-[0] leading-[normal]">
+                  <div className="self-stretch [font-family:'Poppins',Helvetica] font-semibold text-black/80 dark:text-[#ffffffcc] text-lg tracking-[0] leading-[normal]">
                     {educationData.degree}
                   </div>
 
-                  <div className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-[#ffffff99] text-lg tracking-[0] leading-[normal]">
+                  <div className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-black/60 dark:text-[#ffffff99] text-lg tracking-[0] leading-[normal]">
                     {educationData.institution}
                   </div>
 
-                  <div className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-[#ffffff99] text-lg tracking-[0] leading-[normal]">
+                  <div className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-black/60 dark:text-[#ffffff99] text-lg tracking-[0] leading-[normal]">
                     {educationData.duration}
                   </div>
 
-                  <div className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-[#ffffff99] text-lg tracking-[0] leading-[normal]">
+                  <div className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-black/60 dark:text-[#ffffff99] text-lg tracking-[0] leading-[normal]">
                     {educationData.cgpa}
                   </div>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="w-full md:w-[440px] min-h-[261px] bg-[#0d111f] rounded-[10px] border border-solid border-[#4c8eff33]">
+            <Card className="w-full md:w-[440px] min-h-[261px] bg-[#f8f9fa] dark:bg-[#0d111f] rounded-[10px] border border-solid border-[#4c8eff33]">
               <CardContent className="flex flex-col items-start gap-[18px] p-6 sm:p-7">
                 <div className="inline-flex items-center gap-[9px]">
                   <img
-                    className="w-6 h-6"
+                    className="w-6 h-6 dark:invert-0 invert"
                     alt="Hugeicons work"
                     src="/figmaAssets/hugeicons-work.svg"
                   />
 
-                  <h3 className="w-[148px] [font-family:'Poppins',Helvetica] font-medium text-[#ffffffcc] text-xl tracking-[0] leading-[normal]">
+                  <h3 className="w-[148px] [font-family:'Poppins',Helvetica] font-medium text-black/80 dark:text-[#ffffffcc] text-xl tracking-[0] leading-[normal]">
                     Experience
                   </h3>
                 </div>
@@ -122,16 +122,16 @@ export const AboutMeSection = (): JSX.Element => {
                     key={index}
                     className="flex flex-col items-start self-stretch w-full"
                   >
-                    <div className="self-stretch [font-family:'Poppins',Helvetica] font-semibold text-[#ffffffcc] text-lg tracking-[0] leading-[normal]">
+                    <div className="self-stretch [font-family:'Poppins',Helvetica] font-semibold text-black/80 dark:text-[#ffffffcc] text-lg tracking-[0] leading-[normal]">
                       {exp.title}
                     </div>
 
                     <div className="flex flex-col items-start self-stretch w-full">
-                      <div className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-[#ffffff99] text-sm tracking-[0] leading-[normal]">
+                      <div className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-black/60 dark:text-[#ffffff99] text-sm tracking-[0] leading-[normal]">
                         {exp.company}
                       </div>
 
-                      <div className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-[#ffffff99] text-sm tracking-[0] leading-[normal]">
+                      <div className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-black/60 dark:text-[#ffffff99] text-sm tracking-[0] leading-[normal]">
                         {exp.duration}
                       </div>
                     </div>
@@ -145,7 +145,7 @@ export const AboutMeSection = (): JSX.Element => {
 
       <aside className="flex flex-col w-full xl:w-[355px] items-start gap-[45px]">
         <img
-          className="w-[182px] h-[182px] object-cover"
+          className="w-[182px] h-[182px] object-cover rounded-full"
           alt="Image"
           src="/figmaAssets/image.svg"
         />
@@ -153,11 +153,11 @@ export const AboutMeSection = (): JSX.Element => {
         <div className="flex flex-col items-start gap-[41px] self-stretch w-full">
           <div className="flex flex-col items-start gap-3 self-stretch w-full">
             <div className="flex flex-col items-start gap-px self-stretch w-full">
-              <h3 className="self-stretch [font-family:'Poppins',Helvetica] font-medium text-white text-xl tracking-[0] leading-[normal]">
+              <h3 className="self-stretch [font-family:'Poppins',Helvetica] font-medium text-black dark:text-white text-xl tracking-[0] leading-[normal]">
                 Kishan Shetty
               </h3>
 
-              <p className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-[#ffffff99] text-lg tracking-[0] leading-[normal]">
+              <p className="self-stretch [font-family:'Poppins',Helvetica] font-normal text-black/60 dark:text-[#ffffff99] text-lg tracking-[0] leading-[normal]">
                 Software Engineer at Accenture
               </p>
             </div>
@@ -167,7 +167,7 @@ export const AboutMeSection = (): JSX.Element => {
                 <Badge
                   key={index}
                   variant="outline"
-                  className="inline-flex items-center justify-center gap-2.5 px-2.5 py-0.5 bg-[#4c8eff33] rounded-[20px] border border-solid border-[#ffffff33] [font-family:'Poppins',Helvetica] font-medium text-[#ffffffcc] text-sm tracking-[0] leading-[normal] h-auto"
+                  className="inline-flex items-center justify-center gap-2.5 px-2.5 py-0.5 bg-[#4c8eff33] rounded-[20px] border border-solid border-[#ffffff33] [font-family:'Poppins',Helvetica] font-medium text-black/80 dark:text-[#ffffffcc] text-sm tracking-[0] leading-[normal] h-auto"
                 >
                   {skill}
                 </Badge>
