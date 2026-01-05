@@ -78,12 +78,22 @@ export const WebDark = (): JSX.Element => {
         </div>
       </header>
 
-      <main className="w-full relative max-w-[1332px] mx-auto px-6 flex flex-col gap-32">
-        <IntroductionSection />
-        <AboutMeSection />
-        <PortfolioSection />
-        <SkillsOverviewSection />
-        <ContactSection />
+      <main className="w-full relative max-w-[1332px] mx-auto px-6 flex flex-col gap-32 scroll-smooth">
+        <div id="home" className="scroll-mt-32">
+          <IntroductionSection />
+        </div>
+        <div id="about" className="scroll-mt-32">
+          <AboutMeSection />
+        </div>
+        <div id="projects" className="scroll-mt-32">
+          <PortfolioSection />
+        </div>
+        <div id="skills" className="scroll-mt-32">
+          <SkillsOverviewSection />
+        </div>
+        <div id="contact" className="scroll-mt-32">
+          <ContactSection />
+        </div>
       </main>
 
       <footer className="w-full h-[67px] flex items-center justify-center bg-[#0d111f]">
