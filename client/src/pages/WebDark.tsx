@@ -31,7 +31,7 @@ export const WebDark = (): JSX.Element => {
   ];
 
   return (
-    <div className="bg-white dark:bg-[#0f1117] w-full min-h-screen relative transition-colors duration-300">
+    <div className="bg-[#F5F7FA] dark:bg-[#0f1117] w-full min-h-screen relative transition-colors duration-300">
       <header className="w-full flex justify-center py-8">
         <div className="w-full max-w-[1332px] px-4 sm:px-6 flex items-center justify-between">
           <img className="dark:invert-0 invert w-7 h-[21px]" alt="Ks" src="/figmaAssets/ks.svg" />

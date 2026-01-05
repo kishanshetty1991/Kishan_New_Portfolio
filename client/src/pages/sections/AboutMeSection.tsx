@@ -69,7 +69,7 @@ export const AboutMeSection = (): JSX.Element => {
           </div>
 
           <div className="flex flex-col md:flex-row items-center gap-[25px] w-full">
-            <Card className="w-full md:w-[440px] min-h-[261px] bg-[#f8f9fa] dark:bg-[#0d111f] rounded-[10px] border border-solid border-[#4c8eff33]">
+            <Card className="w-full md:w-[440px] min-h-[261px] bg-white dark:bg-[#0d111f] rounded-[10px] border border-solid border-[#4c8eff33]">
               <CardContent className="flex flex-col items-start gap-[15px] p-6 sm:p-7">
                 <div className="inline-flex items-center gap-2">
                   <img
@@ -103,7 +103,7 @@ export const AboutMeSection = (): JSX.Element => {
               </CardContent>
             </Card>
 
-            <Card className="w-full md:w-[440px] min-h-[261px] bg-[#f8f9fa] dark:bg-[#0d111f] rounded-[10px] border border-solid border-[#4c8eff33]">
+            <Card className="w-full md:w-[440px] min-h-[261px] bg-white dark:bg-[#0d111f] rounded-[10px] border border-solid border-[#4c8eff33]">
               <CardContent className="flex flex-col items-start gap-[18px] p-6 sm:p-7">
                 <div className="inline-flex items-center gap-[9px]">
                   <img

@@ -58,7 +58,7 @@ export const PortfolioSection = (): JSX.Element => {
         {projectsData.map((project) => (
           <Card
             key={project.id}
-            className="bg-[#f8f9fa] dark:bg-[#0d111f] rounded-[10px] overflow-hidden border border-solid border-[#4c8eff66] flex flex-col min-h-[469px] w-full"
+            className="bg-white dark:bg-[#0d111f] rounded-[10px] overflow-hidden border border-solid border-[#4c8eff66] flex flex-col min-h-[469px] w-full"
           >
             <div className="w-full h-[220px] flex-shrink-0">
               <img
