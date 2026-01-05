@@ -1,5 +1,6 @@
+import React from "react";
 import { DownloadIcon, GithubIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../components/ui/button";
 
 export const IntroductionSection = (): JSX.Element => {
   const codeLines = [
@@ -63,7 +64,7 @@ export const IntroductionSection = (): JSX.Element => {
   ];
 
   return (
-    <section id="home" className="w-full py-16 scroll-mt-24 px-4 sm:px-6">
+    <section id="home" className="w-full py-16 scroll-mt-4 px-4 sm:px-6">
       <div className="flex flex-col lg:flex-row items-center justify-between gap-16 w-full max-w-[1332px] mx-auto">
         <div className="flex flex-col items-start gap-[53px] w-full lg:w-[469px]">
           <div className="flex flex-col items-start gap-2.5 w-full">
@@ -86,8 +87,8 @@ export const IntroductionSection = (): JSX.Element => {
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-7 w-full">
             <Button className="inline-flex items-center justify-center gap-2.5 px-5 py-3.5 bg-[#4c8eff] hover:bg-[#4c8eff]/90 rounded-[10px] h-auto">
               <DownloadIcon className="w-6 h-6" />
-              <span className="[font-family:'Poppins',Helvetica] font-semibold text-[#0f1117] text-lg tracking-[0] leading-[normal]">
-                DownloadIcon Resume
+              <span className="[font-family:'Poppins',Helvetica] font-semibold text-[#ffffff] dark:text-[#0f1117] text-lg tracking-[0] leading-[normal]">
+                Download Resume
               </span>
             </Button>
 
@@ -103,7 +104,7 @@ export const IntroductionSection = (): JSX.Element => {
           </div>
         </div>
 
-        <div className="relative w-full lg:w-[583.16px] h-[357.29px] bg-[#0d111f] rounded-[25.52px] overflow-hidden border-[1.28px] border-solid border-[#ffffff99]">
+        <div className="relative w-full lg:w-[583.16px] h-[357.29px] bg-[#FFFFFF] dark:bg-[#0d111f] rounded-[25.52px] overflow-hidden border-[1.28px] border-solid border-[#ffffff99]">
           <div className="absolute top-9 left-[34px] w-[15px] h-[15px] bg-red-500 rounded-[7.66px]" />
           <div className="absolute top-9 left-[60px] w-[15px] h-[15px] bg-yellow-500 rounded-[7.66px]" />
           <div className="absolute top-9 left-[85px] w-[15px] h-[15px] bg-green-500 rounded-[7.66px]" />

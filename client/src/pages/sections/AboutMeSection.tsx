@@ -1,6 +1,8 @@
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import React from "react";
+import { Badge } from "../../components/ui/badge";
+import { Button } from "../../components/ui/button";
+import { Card, CardContent } from "../../components/ui/card";
+import { StarIcon } from "lucide-react";
 
 const educationData = {
   degree: "Masters in Computer Application",
@@ -34,7 +36,7 @@ const skills = [
 
 export const AboutMeSection = (): JSX.Element => {
   return (
-    <section id="about" className="flex flex-col xl:flex-row items-start gap-[63px] w-full scroll-mt-24 px-4 sm:px-6 overflow-hidden">
+    <section id="about" className="flex flex-col xl:flex-row items-start gap-[63px] w-full scroll-mt-4 px-4 sm:px-6 overflow-hidden">
       <div className="flex flex-col flex-1 items-start gap-[46px] w-full">
         <div className="flex flex-col w-full sm:w-[235px] items-start gap-1.5">
           <div className="self-stretch [font-family:'Roboto_Mono',Helvetica] font-bold text-black/40 dark:text-[#ffffff99] text-base tracking-[0] leading-[normal]">
@@ -50,7 +52,7 @@ export const AboutMeSection = (): JSX.Element => {
           <div className="flex flex-col items-start gap-1.5 self-stretch w-full">
             <div className="inline-flex items-start gap-2.5">
               <img
-                className="w-6 h-6 dark:invert-0 invert"
+                className="w-6 h-6 dark:invert-0"
                 alt="Solar document"
                 src="/figmaAssets/solar-document-broken.svg"
               />
@@ -73,7 +75,7 @@ export const AboutMeSection = (): JSX.Element => {
               <CardContent className="flex flex-col items-start gap-[15px] p-6 sm:p-7">
                 <div className="inline-flex items-center gap-2">
                   <img
-                    className="w-6 h-6 dark:invert-0 invert"
+                    className="w-6 h-6 dark:invert-0"
                     alt="Cil education"
                     src="/figmaAssets/cil-education.svg"
                   />
@@ -107,7 +109,7 @@ export const AboutMeSection = (): JSX.Element => {
               <CardContent className="flex flex-col items-start gap-[18px] p-6 sm:p-7">
                 <div className="inline-flex items-center gap-[9px]">
                   <img
-                    className="w-6 h-6 dark:invert-0 invert"
+                    className="w-6 h-6 dark:invert-0"
                     alt="Hugeicons work"
                     src="/figmaAssets/hugeicons-work.svg"
                   />
@@ -144,11 +146,21 @@ export const AboutMeSection = (): JSX.Element => {
       </div>
 
       <aside className="flex flex-col w-full xl:w-[355px] items-start gap-[45px]">
-        <img
-          className="w-[182px] h-[182px] object-cover rounded-full"
-          alt="Image"
-          src="/figmaAssets/image.svg"
-        />
+        <div className="relative inline-block">
+          <img
+            className="w-[182px] h-[182px] object-cover rounded-full"
+            alt="Image"
+            src="/figmaAssets/image.svg"
+          />
+
+          <Badge className="absolute bottom-0 left-0 translate-x-1/4 translate-y-1/4 inline-flex items-center justify-center gap-2.5 px-5 py-1.5 bg-[#4c8eff] rounded-[20px] border-0 hover:bg-[#4c8eff] h-auto">
+            <StarIcon className="w-6 h-6 fill-[#0f1117] text-[#0f1117]" />
+            <span className="whitespace-nowrap font-['Poppins',Helvetica] font-medium text-[#0f1117] text-base tracking-[0] leading-[normal]">
+              Azure 4x Certified
+            </span>
+          </Badge>
+        </div>
+
 
         <div className="flex flex-col items-start gap-[41px] self-stretch w-full">
           <div className="flex flex-col items-start gap-3 self-stretch w-full">

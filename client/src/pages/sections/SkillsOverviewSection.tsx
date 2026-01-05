@@ -1,5 +1,6 @@
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
+import React from "react";
+import { Badge } from "../../components/ui/badge";
+import { Card, CardContent } from "../../components/ui/card";
 
 const skillCategories = [
   {
@@ -36,7 +37,7 @@ const skillCategories = [
 
 export const SkillsOverviewSection = (): JSX.Element => {
   return (
-    <section id="skills" className="flex flex-col w-full items-start gap-9 relative scroll-mt-24 px-4 sm:px-6 overflow-hidden">
+    <section id="skills" className="flex flex-col w-full items-start gap-9 relative scroll-mt-4 px-4 sm:px-6 overflow-hidden">
       <header className="flex flex-col max-w-[924px] items-start gap-3 relative">
         <div className="flex flex-col items-start gap-1.5 relative">
           <p className="relative [font-family:'Roboto_Mono',Helvetica] font-bold text-black/40 dark:text-[#ffffff99] text-base tracking-[0] leading-[normal]">
@@ -66,7 +67,7 @@ export const SkillsOverviewSection = (): JSX.Element => {
               <div className="flex items-center gap-3.5 w-full">
                 <div className="flex items-center justify-center w-[38px] h-[38px] bg-[#4c8eff33] rounded-[10px] overflow-hidden flex-shrink-0">
                   <img
-                    className="w-6 h-6 dark:invert-0 invert"
+                    className="w-6 h-6 dark:invert-0"
                     alt={category.title}
                     src={category.icon}
                   />

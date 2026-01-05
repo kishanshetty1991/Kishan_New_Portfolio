@@ -1,5 +1,5 @@
-import { StarIcon, Moon, Sun } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import React from "react";
+import { Moon, Sun } from "lucide-react";
 import { AboutMeSection } from "./sections/AboutMeSection";
 import { ContactSection } from "./sections/ContactSection";
 import { IntroductionSection } from "./sections/IntroductionSection";
@@ -103,18 +103,11 @@ export const WebDark = (): JSX.Element => {
         <ContactSection />
       </main>
 
-      <footer className="w-full h-[67px] flex items-center justify-center bg-[#0d111f]">
+      <footer className="w-full h-[67px] flex items-center justify-center bg-[#0d111f] mt-32">
         <div className="mt-px h-6 w-[220px] [font-family:'Poppins',Helvetica] font-normal text-[#ffffffcc] text-base tracking-[1.28px] leading-[normal] text-center">
-          Made with ❤ in India
+          Made with ❤️ in India
         </div>
       </footer>
-
-      <Badge className="fixed top-[1084px] left-[1167px] inline-flex items-center justify-center gap-2.5 px-5 py-1.5 bg-[#4c8eff] rounded-[20px] border-0 hover:bg-[#4c8eff] h-auto">
-        <StarIcon className="w-6 h-6 fill-[#0f1117] text-[#0f1117]" />
-        <span className="[font-family:'Poppins',Helvetica] font-medium text-[#0f1117] text-base tracking-[0] leading-[normal]">
-          Azure 4x Certified
-        </span>
-      </Badge>
     </div>
   );
 };

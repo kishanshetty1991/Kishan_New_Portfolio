@@ -1,6 +1,7 @@
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import React from "react";
+import { Badge } from "../../components/ui/badge";
+import { Button } from "../../components/ui/button";
+import { Card, CardContent } from "../../components/ui/card";
 
 const projectsData = [
   {
@@ -34,7 +35,7 @@ const projectsData = [
 
 export const PortfolioSection = (): JSX.Element => {
   return (
-    <section id="projects" className="flex flex-col w-full items-start gap-[65px] relative scroll-mt-24 px-4 sm:px-6 overflow-hidden">
+    <section id="projects" className="flex flex-col w-full items-start gap-[65px] relative scroll-mt-4 px-4 sm:px-6 overflow-hidden">
       <header className="flex flex-col max-w-[924px] items-start gap-3 relative">
         <div className="flex flex-col items-start gap-1.5 relative">
           <div className="relative [font-family:'Roboto_Mono',Helvetica] font-bold text-black/40 dark:text-[#ffffff99] text-base tracking-[0] leading-[normal]">

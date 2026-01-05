@@ -1,18 +1,14 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
+import React from "react";
+import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
+import { Label } from "../../components/ui/label";
+import { Textarea } from "../../components/ui/textarea";
 
 const contactInfo = [
   {
-    icon: "/figmaAssets/mage-email.svg",
+    icon: "/figmaAssets/mage_email.svg",
     title: "Email",
-    value: "kishanshetty@gmail.com",
-  },
-  {
-    icon: "/figmaAssets/solar-phone-outline.svg",
-    title: "Phone",
-    value: "+91 99999 99999",
+    value: "me.kishanshetty@gmail.com",
   },
   {
     icon: "/figmaAssets/mynaui-location.svg",
@@ -38,7 +34,7 @@ const socialLinks = [
 
 export const ContactSection = (): JSX.Element => {
   return (
-    <section id="contact" className="flex flex-col w-full items-start gap-[83px] scroll-mt-24 px-4 sm:px-6 overflow-hidden">
+    <section id="contact" className="flex flex-col w-full items-start gap-[83px] scroll-mt-4 px-4 sm:px-6 overflow-hidden">
       <div className="flex flex-col max-w-[924px] items-start gap-3">
         <div className="flex flex-col items-start gap-1.5">
           <div className="[font-family:'Roboto_Mono',Helvetica] font-bold text-black/40 dark:text-[#ffffff99] text-base tracking-[0] leading-[normal]">
@@ -74,7 +70,7 @@ export const ContactSection = (): JSX.Element => {
               {contactInfo.map((info, index) => (
                 <div key={index} className="flex items-start w-full gap-2.5">
                   <img
-                    className="w-6 h-6 flex-shrink-0 dark:invert-0 invert"
+                    className="w-6 h-6 flex-shrink-0 dark:invert-0"
                     alt={info.title}
                     src={info.icon}
                   />
@@ -124,7 +120,7 @@ export const ContactSection = (): JSX.Element => {
                 </Label>
                 <Input
                   id="name"
-                  defaultValue="John Doe"
+                  placeholder="John Doe"
                   className="h-auto gap-2.5 p-2.5 rounded-[10px] border border-solid border-black/10 dark:border-[#ffffff33] bg-transparent [font-family:'Poppins',Helvetica] font-normal text-black/80 dark:text-[#ffffffcc] text-sm tracking-[0] leading-[normal]"
                 />
               </div>
@@ -139,7 +135,7 @@ export const ContactSection = (): JSX.Element => {
                 <Input
                   id="email"
                   type="email"
-                  defaultValue="john@example.com"
+                  placeholder="john@example.com"
                   className="h-auto gap-2.5 p-2.5 rounded-[10px] border border-solid border-black/10 dark:border-[#ffffff33] bg-transparent [font-family:'Poppins',Helvetica] font-normal text-black/80 dark:text-[#ffffffcc] text-sm tracking-[0] leading-[normal]"
                 />
               </div>
@@ -154,7 +150,7 @@ export const ContactSection = (): JSX.Element => {
               </Label>
               <Input
                 id="subject"
-                defaultValue="How can I help you?"
+                placeholder="How can I help you?"
                 className="h-auto gap-2.5 p-2.5 rounded-[10px] border border-solid border-black/10 dark:border-[#ffffff33] bg-transparent [font-family:'Poppins',Helvetica] font-normal text-black/80 dark:text-[#ffffffcc] text-sm tracking-[0] leading-[normal]"
               />
             </div>
@@ -168,7 +164,7 @@ export const ContactSection = (): JSX.Element => {
               </Label>
               <Textarea
                 id="message"
-                defaultValue="Your message here...."
+                placeholder="Your message here...."
                 className="h-32 gap-2.5 p-2.5 rounded-[10px] border border-solid border-black/10 dark:border-[#ffffff33] bg-transparent [font-family:'Poppins',Helvetica] font-normal text-black/80 dark:text-[#ffffffcc] text-sm tracking-[0] leading-[normal] resize-none"
               />
             </div>
