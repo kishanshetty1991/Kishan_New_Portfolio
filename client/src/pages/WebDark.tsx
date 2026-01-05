@@ -78,7 +78,7 @@ export const WebDark = (): JSX.Element => {
         </div>
       </header>
 
-      <main className="w-full relative">
+      <main className="w-full relative max-w-[1332px] mx-auto px-6 flex flex-col gap-32">
         <IntroductionSection />
         <AboutMeSection />
         <PortfolioSection />

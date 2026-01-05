@@ -63,8 +63,8 @@ export const IntroductionSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="w-full py-16 px-6">
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-[269px] max-w-[1400px] mx-auto">
+    <section id="home" className="w-full py-16">
+      <div className="flex flex-col lg:flex-row items-center justify-between gap-16 w-full">
         <div className="flex flex-col items-start gap-[53px] w-full lg:w-[469px]">
           <div className="flex flex-col items-start gap-2.5 w-full">
             <div className="flex flex-col items-start gap-[5px] w-full">

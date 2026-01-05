@@ -34,8 +34,8 @@ const skills = [
 
 export const AboutMeSection = (): JSX.Element => {
   return (
-    <section className="flex items-end gap-[63px] w-full">
-      <div className="flex flex-col w-[925px] items-start gap-[46px]">
+    <section id="about" className="flex flex-col xl:flex-row items-start gap-[63px] w-full">
+      <div className="flex flex-col flex-1 items-start gap-[46px]">
         <div className="flex flex-col w-[235px] items-start gap-1.5">
           <div className="self-stretch [font-family:'Roboto_Mono',Helvetica] font-bold text-[#ffffff99] text-base tracking-[0] leading-[normal]">
             &lt;Get to Know More&gt;
@@ -143,7 +143,7 @@ export const AboutMeSection = (): JSX.Element => {
         </div>
       </div>
 
-      <aside className="flex flex-col w-[355px] items-start gap-[45px]">
+      <aside className="flex flex-col w-full xl:w-[355px] items-start gap-[45px]">
         <img
           className="w-[182px] h-[182px] object-cover"
           alt="Image"
